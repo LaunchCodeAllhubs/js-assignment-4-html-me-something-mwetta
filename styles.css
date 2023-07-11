@@ -1,3 +1,7 @@
+body {
+    background-color: aquamarine;
+}
+
 .flip-card {
     background-color: transparent;
     height: 50vh;
@@ -15,8 +19,9 @@
     transform-style: preserve-3d;
 }
 
-.flip-card:hover .flip-card-inner {
-    transform: rotateY(180deg);
+.flip-card,
+.flip-card-inner {
+    /* transform: rotateY(180deg); */
 }
 
 .flip-card-front {
@@ -37,7 +42,19 @@
 .flip-card-back {
     background-image: url(images/0-The-Fool.jpg);
     background-size: cover;
+
+}
+
+.flip {
     transform: rotateY(180deg);
 }
+
+.transform {
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+
+
+
 
 h1 {}
