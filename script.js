@@ -236,10 +236,8 @@ const tarot =
     ];
 
 let randomNumber = Math.floor(Math.random() * 21);
-console.log(randomNumber);
 
 randomCard = tarot[randomNumber];
-console.log(randomCard);
 
 let cardName = document.querySelector("#name");
 cardName.innerText = randomCard.name;
