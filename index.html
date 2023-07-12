@@ -1,8 +1,65 @@
 <!DOCTYPE html>
-<html>
-   <head>
-   </head>
-   <body>
-      <!-- Write your HTML in this file! -->
-   </body>
-</html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="styles.css">
+   <script src="script.js" defer></script>
+   <title>Daily Tarot</title>
+</head>
+
+<body>
+   <header>
+      <h1 id="mainHeading">Daily Tarot</h1>
+   </header>
+
+   <main>
+      <section>
+         <h2>About Tarot</h2>
+         <p>
+            Tarot originated in Europe. Originally used for games, tarot cards were adopted by occultists for divination
+            and cartomancy. In modern times, tarot can be used as a reflective tool to focus attention to certain areas
+            of
+            one's life.
+         </p>
+      </section>
+
+      <section id="card">
+         <h2 class="reveal visible">Reveal your card.</h2>
+         <div class="flip-card">
+            <div class="flip-card-inner">
+               <div class="flip-card-front"></div>
+               <div class="flip-card-back flip">
+               </div>
+            </div>
+         </div>
+      </section>
+
+
+      <article id="reveal" class="hidden">
+         <h2 id="name">The Fool</h2>
+         <p id="testP" class="funParagraph">The grand adventure begins! The fearless Fool with their devil-may-care attitude is
+            ready
+            to take the first
+            steps
+            towards the unknown. Pure passion and optimism fuel them as they dances to their music, to joy itself. They
+            don't
+            know what lies beyond the cliff's edge, but they've left behind their life in the city. Goodbye to normalcy,
+            to
+            routine, to the structured life they'd had within society. They fully trusts their instincts to carry them
+            beyond
+            the ordinary.</p>
+         <h2>What does this card mean for you?</h2>
+         <p id="advice">Don't be afraid to take that leap of faith. Now is the time for you to start your journey,
+            because
+            you're
+            ready. Be spontaneous and let your wildness run free. Don't look back in fear, look ahead and up to the sky
+            and
+            sun and let your instincts guide you.</p>
+      </article>
+   </main>
+
+   <footer>&copy; Madeline Wetta for LaunchCode Java Web Development Course</footer>
+</body>

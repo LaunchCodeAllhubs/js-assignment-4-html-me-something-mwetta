@@ -1,1 +1,88 @@
-/* Write your CSS here! */
+body {
+    display: block;
+    flex-direction: column;
+    margin: 8px;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr 30vh 1fr;
+    gap: 30px;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100vw;
+    text-align: center;
+    background-color: beige;
+}
+
+/* Flip Card Styling */
+.flip-card {
+    background-color: transparent;
+    height: 50vh;
+    width: 30vh;
+    perspective: 1000px;
+    /* Remove this if you don't want the 3D effect */
+}
+
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.5s;
+    transform-style: preserve-3d;
+}
+
+.flip-card-front {
+    background-image: url(images/plaid.png);
+}
+
+.flip-card-front,
+.flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    /* Safari */
+    backface-visibility: hidden;
+    border-radius: 15px;
+}
+
+.flip-card-back {
+    background-image: url(images/all/0-The-Fool.jpg);
+    background-size: cover;
+
+}
+
+.flip {
+    transform: rotateY(180deg);
+}
+
+.transform {
+    transition: transform 0.5s;
+    transform-style: preserve-3d;
+}
+
+.hidden {
+    display: none;
+}
+
+h1,
+h2 {
+    font-family: Helvetica, sans-serif;
+}
+
+#card {
+    grid-column: ;
+}
+
+#mainHeading {
+    color: red;
+}
+
+.funParagraph {
+    color: green;
+}
